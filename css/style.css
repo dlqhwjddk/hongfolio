@@ -1,0 +1,66 @@
+@import url("common.css");
+
+.wrap{
+    width: 100%;
+    background: #f4cccc;
+}
+
+.header{
+    margin: 0 auto;
+    padding-top: 2%;
+}
+.header a:first-of-type{
+    width: 155px;
+    height: 55px;
+    background: #fff;
+    position: absolute;
+    left: 5%; top: 5%;
+    border: 2px solid #333;
+    text-align: center;
+}
+.header a:first-of-type ::after{
+    border: 3px solid #f00;
+}
+.header a:nth-of-type(2){
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ul li{
+    width: 39%;
+    margin: 
+
+}
+
+ul .arrow{}
+ul .arrow img{}
+ul .arrow span{
+}
+
+ul .work_list{}
+ul .work_list span{}
+ul .work_list span:nth-ot-type(2){}
+ul .work_list p{
+/*
+    display: flex;
+    flex-wrap: nowrap;
+*/
+    border: 3px solid #333;
+/*    height: 563px;*/
+}
+ul .work_list p:nth-of-type(2){
+    
+}
+ul .work_list p:nth-of-type(3){}
+ul .work_list p img{
+}
+
+.photo_frame{}
+.photo_frame img{}
+
