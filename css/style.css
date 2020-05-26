@@ -1,9 +1,12 @@
 @import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 .wrap{
     width: 100%;
+    height: 100vh;
     background: #f4cccc;
 }
+/*
 
 .header{
     margin: 0 auto;
@@ -33,7 +36,7 @@ ul{
 }
 
 ul li{
-    width: 39%;
+    
     margin: 
 
 }
@@ -43,17 +46,14 @@ ul .arrow img{}
 ul .arrow span{
 }
 
-ul .work_list{}
+ul .work_list{
+    width: 435px;
+    height: 557px;
+    background: #fff;
+}
 ul .work_list span{}
 ul .work_list span:nth-ot-type(2){}
-ul .work_list p{
-/*
-    display: flex;
-    flex-wrap: nowrap;
-*/
-    border: 3px solid #333;
-/*    height: 563px;*/
-}
+ul .work_list p{}
 ul .work_list p:nth-of-type(2){
     
 }
@@ -63,4 +63,116 @@ ul .work_list p img{
 
 .photo_frame{}
 .photo_frame img{}
+*/
 
+.header{
+    width: 45%;
+    margin-left: 10%;    
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .about{
+/*    border: 1px solid #f00;*/
+    position: relative;
+    margin-top: 30px;
+}
+.header .about .about_before{
+    width: 130px;
+    background: #f2a4a4;
+    border: 3px solid #333;
+    padding: 25px 0;
+}
+.header .about .about_top{
+    width: 130px;
+    background: #fff;
+    border: 3px solid #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -10px; top: -14px;
+}
+
+.header .logo{
+/*    border: 1px solid #00f;*/
+}
+
+ul{
+    width: 157%;
+    display: flex;
+    height: 570px;
+/*    transform: rotate(-12deg);*/
+}
+ul li{
+    height: 100%;
+    margin: 20px 150px;
+}
+
+ul .arrow{}
+ul .arrow p{}
+ul .arrow p img{}
+
+ul .work_list{
+    width: 15%;
+    height: 100%;
+    position: relative;
+}
+ul .work_list .num{}
+ul .work_list .photo_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+ul .work_list .photo_box p{
+    border: 3px solid #333;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+ul .work_list .photo_box p:first-of-type{
+    left: 40px; top: 40px;
+}
+ul .work_list .photo_box p:nth-of-type(2){
+    left: 20px; top: 20px;
+}
+ul .work_list .photo_box .first_p{
+    background: #fff;
+    text-align: center;
+}
+ul .work_list .photo_box .first_p img{
+    padding: 10px 0;
+}
+ul .work_list .work_name{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    -webkit-text-stroke: 2px black;
+}
+
+.sinil .photo_box p:first-of-type{
+    background: #f7e47e;
+}
+.sinil .photo_box p:nth-of-type(2){
+    background: #f8efbd;
+}
+.bongjunho .photo_box p:first-of-type{
+    background: #8dc6fa;
+}
+.bongjunho .photo_box p:nth-of-type(2){
+    background: #c9e1f7;
+}
+.working .photo_box p:first-of-type{
+    background: #9fd588;
+}
+.working .photo_box p:nth-of-type(2){
+    background: #d8ead2;
+}
+.photo_frame{}
+.photo_frame img{}
