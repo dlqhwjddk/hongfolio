@@ -1,6 +1,8 @@
 @import url("common.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 /*font-family: 'Montserrat', sans-serif;*/
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/*font-family: 'NanumSquare', sans-serif;*/
 
 .intro{
     width: 100%;
@@ -214,7 +216,14 @@ ul .work_list .work_name{
     letter-spacing: 3px;
     -webkit-text-stroke: 2px black;
 }
-
+ul .work_list small{
+    width: 150%;
+    position: absolute;
+    top: 121%;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.2rem;
+}
 .sinil .photo_box p:first-of-type{
     background: #f7e47e;
 }
