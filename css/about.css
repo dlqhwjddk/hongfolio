@@ -1,0 +1,204 @@
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/*font-family: 'NanumSquare', sans-serif;*/
+
+.wrap{
+    width: 100%;
+    /*background: #fecece;*/
+    background-color: #fecece;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.66) 2%, transparent 2%), linear-gradient(rgba(255,255,255,.66) 2%, transparent 2%);
+    background-size: 25px 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.header{
+    width: 81.5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-style: italic;
+    line-height: 0.9;
+    color: #fff;
+/*    color: #e02456;*/
+    -webkit-text-stroke: 2px #333;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo img{}
+
+
+.menu{
+    position: relative;
+    width: 110px;
+    height: 25px;
+    margin-top: 1%;
+}
+.menu span{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: #fff;
+    border: 2px solid #333;
+    text-align: center;
+    padding: 8px 0;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.3rem;
+    z-index: 2;
+}
+.menu span:nth-of-type(2){
+    width: 100%; height: 100%;
+    background: #f2a4a4;
+    border: 2px solid #333;
+    z-index: 1;
+    left: 5px; top: 5px;
+}
+.menu:hover span:first-of-type{
+    left: 5px; top: 5px;
+}
+
+.start{
+    width: 100%;
+    height: 87vh;
+}
+.start .about_me{
+    width: 30%; height: 95%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.start .about_me img{
+    width: 40%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.start .about_me img:first-of-type{
+    left: 52%; top: 51%;
+}
+.start .about_me span{
+    width: 55%;
+    position: absolute;
+    left: 50%; top: 43%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #333;
+}
+.start .about_me span:nth-of-type(1){
+    background: #d2e2fa;
+    left: 43%; top: 36%;
+    transform: translateX(-50%) rotate(10deg);
+}
+.start .about_me span:nth-of-type(2){
+    background: #b6d0f8;
+    left: 58%;
+}
+.start >p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    animation: scroll .7s linear infinite;
+}
+
+@keyframes scroll{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.intro{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 230px;
+    margin-bottom: 230px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.intro .title{
+    position: absolute;
+    left: 57%; top: 10%;
+    width: 17%;
+    background: #333;
+    overflow: hidden;
+}
+.intro .title span{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.intro .profile{
+    width: 35%; height: 600px;
+    padding: 0.5%;
+    position: relative;
+    
+}
+.intro .profile > div{
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    background: #fff;
+    border: 3px solid #333;
+}
+.intro .profile > div:nth-of-type(1){
+    background: #f7e47e;
+    left: 50px; top: 50px;
+}
+.intro .profile > div:nth-of-type(2){
+    background: #f7eba7;
+    left: 25px; top: 25px;
+}
+
+.intro .profile .top > p{
+    padding: 2%;
+}
+.intro .profile .top > p img{
+    width: 100%;
+}
+.intro .profile .top .text{
+    padding: 0 4%;
+    white-space: pre-line;
+    font-family: 'NanumSquare', sans-serif;
+}
+.intro .profile .top .text p{
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.intro .profile .top .text span{
+    width: 100%;
+    text-align: right;
+    font-size: 1.05rem;
+}
+.intro .profile .top .text span:first-of-type{
+    margin-bottom: 10px;
+}
+
+.intro .intro_text{
+    margin-top: 150px;
+    width: 43%;
+    font-weight: bold;
+    font-family: 'NanumSquare', sans-serif;
+    line-height: 1.5;
+}
+.intro .intro_text p{
+    font-size: 1.1rem;
+    white-space: pre-line;
+}
+.inrto .intro_text p span{
+    color: #784a4a;
+    font-size: 1.1rem;
+}

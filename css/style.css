@@ -30,26 +30,26 @@
 .intro .text .first{
     background: #f8b6b6;
     margin-left: 18%;
-    animation: first 5s 1s linear;
+    animation: first 5s 1s linear forwards;
 }
 .intro .text .second{
     background: #b6d0f8;
     margin-left: 40%;
-    animation: second 5s 1s linear;
+    animation: second 5s 1s linear forwards;
 }
 .intro .text .third{
     background: #98dc9d;
-    animation: third 5s 1s linear;
+    animation: third 5s 1s linear forwards;
 }
 .intro .text .fourth{
     background: #fbed8e;
     margin-left: 32.6%;
-    animation: fourth 5s 1s linear;
+    animation: fourth 5s 1s linear forwards;
 }
 .intro .text .fifth{
     background: #fad07e;
     margin-left: 55%;
-    animation: fifth 5s 1s linear;
+    animation: fifth 5s 1s linear forwards;
 }
 
 @keyframes first{
@@ -86,62 +86,28 @@
 .wrap{
     width: 100%;
     height: 100vh;
-    background: #fecece;
+/*    background: #fecece;*/
+    background-color: #fecece;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.66) 2%, transparent 2%), linear-gradient(rgba(255,255,255,.66) 2%, transparent 2%);
+    background-size: 25px 25px;
+    
     overflow: hidden;
     position: relative;
 }
 
-/*.header{
-    width: 100%;
-    margin-left: 10%;    
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.header .about{
-    border: 1px solid #f00;
-    position: relative;
-    margin-top: 30px;
-}
 
-.header .about .about_bottom{
-    width: 130px;
-    background: #f2a4a4;
-    border: 2px solid #333;
-    padding: 25px 0;
-}
-.header .about .about_top{
-    width: 130px;
-    background: #fff;
-    border: 2px solid #333;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 1.5rem;
-    position: absolute;
-    left: -8px; top: -10px;
-    transition: .3s;
-}
-
-.header .about:hover .about_top{
-    left: 0; top: 0;
-}
-
-.header .logo{}
-.header .logo img{
-    width: 90%;
-}*/
 .header{
     width: 85%;
 /*    border: 1px solid #ff0;*/
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     margin: 0 auto;
     margin-top: 3%;
 }
 
 .photo_frame{
-    width: 195px;
-    height: 143px;
+    width: 200px;
+/*    height: 143px;*/
     box-sizing: content-box;
     position: relative;
     padding-top:50px;
@@ -153,6 +119,7 @@
 }
 .photo_frame::before{
     content: '';
+    display: block;
     position: absolute;
     width: 15px; height: 15px;
     left: 50%; top: 0px;
@@ -174,59 +141,81 @@
     transform: rotate(45deg);
 }
 .photo_frame > p{
-    width: 60%;
+    width: 85%;
     text-align: center;
-    margin-left: 19%;
-    margin-top: 4%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 .photo_frame > p img{
     width: 100%;
 }
 .photo_frame .frame{
     position: absolute;
-    width: 195px;
-    height: 145px;
-    left: 10%; top: 42px;
+    width: 100%;
+/*    height: 145px;*/
+    /*left: 10%;*/ top: 42px;
     z-index: 5;
 }
 .photo_frame .frame p{
+    width: 100%;
     position: absolute;
-    left: 0; top: 0;
-}
-.photo_frame .frame p img{}
-.photo_frame .frame p{
-    left: 0.5%;
+    left: 0.5; top: 0;
 }
 .photo_frame .frame p img{
-    width: 150px;
+    width: 100%;
 }
 
-.logo{}
+.logo{
+    position: absolute;
+    left: 50%; top: 5%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-style: italic;
+    line-height: 0.9;
+    color: #fff;
+/*    color: #e02456;*/
+    -webkit-text-stroke: 2px #333;
+    font-family: 'Montserrat', sans-serif;
+}
 .logo img{}
 
-.about{
-    position: relative;
+
+nav{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 10%; top: 5%;
     margin-top: 20px;
 }
-.about .about_bottom{
-    width: 130px;
-    background: #f2a4a4;
-    border: 2px solid #333;
-    padding: 25px 0;
+nav a{
+    position: relative;
+    width: 110px;
+    height: 25px;
 }
-.about .about_top{
-    width: 130px;
+
+nav a span{
+    position: absolute;
+    width: 100%; height: 100%;
     background: #fff;
     border: 2px solid #333;
     text-align: center;
-    padding: 10px 0;
-    font-size: 1.5rem;
-    position: absolute;
-    left: -8px; top: -10px;
-    transition: .3s;
+    padding: 8px 0;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.3rem;
+    z-index: 2;
 }
-.header .about:hover .about_top{
-    left: 0; top: 0;
+nav a span:nth-of-type(2){
+    width: 100%; height: 100%;
+    background: #f2a4a4;
+    border: 2px solid #333;
+    z-index: 1;
+    left: 5px; top: 5px;
+}
+
+.header nav a:hover span{
+    left: 5px; top: 5px;
 }
 
 
@@ -236,11 +225,10 @@ ul{
     height: 570px;
     position: absolute;
     left: 0; top: 17%;
-    /*margin-left: 5%;
-    margin-top: 2%;*/
+    margin-left: -2%;
     transition: .5s;
     animation: ul 3s 2s linear;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
 }
 
 @keyframes ul{
@@ -255,19 +243,33 @@ ul li{
 }
 
 ul .arrow{
+    width: 450px;
     position: relative;
-    padding: 8.5% 0;
+    margin: 0;
+}
+ul .arrow h3{
+    position: absolute;
+    left: 0; top: 53%;
+    z-index: 5;
+    font-size: 4.5rem;
+    color: #e02456;
+    -webkit-text-stroke: 1px #333;
+    font-family: 'Montserrat', sans-serif;
 }
 ul .arrow p{
+    position: relative;
+    left: 65%; top: 50%;
+}
+ul .arrow p img{
     position: absolute;
+    width: 230px;
 }
-ul .arrow p:first-of-type{
-    left: 20%; top: 24.7%;
+ul .arrow p img:first-of-type{
+    left: 1.5%; top: 10px;
 }
-ul .arrow p img{}
-ul .arrow span{}
 
 ul .work_list{
+/*    border: 1px solid #f00;*/
     width: 15%;
     height: 100%;
     position: relative;
@@ -278,7 +280,7 @@ ul .work_list .num{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #fff;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #333;
 }
 ul .work_list .photo_box{
     position: relative;
@@ -327,7 +329,8 @@ ul .work_list small{
     text-align: center;
     font-family: 'NanumSquare', sans-serif;
     font-size: 1.1rem;
-    color: #000;
+    font-weight: bold;
+    color: #333;
 }
 .sinil .photo_box p:first-of-type{
     background: #f7e47e;
