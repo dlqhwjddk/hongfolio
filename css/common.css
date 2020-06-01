@@ -12,6 +12,13 @@ a{
 span,em,strong,a{
     display: inline-block;
 }
+/*label, input{
+    display: inline-block;
+}*/
+p,a,h1, h2, h3, h4, h5, h6{
+    transform: skew(-0.001deg);
+}
+
 *{
     margin:0;
     padding: 0;

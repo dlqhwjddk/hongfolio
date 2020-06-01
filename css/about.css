@@ -7,15 +7,11 @@
 .wrap{
     width: 100%;
     background: #fecece;
-    /*background-color: #fecece;
-    background-image: linear-gradient(90deg, rgba(255,255,255,.66) 2%, transparent 2%), linear-gradient(rgba(255,255,255,.66) 2%, transparent 2%);*/
-    background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px);
-    background-size: 25px 25px, 25px 25px, 2px 2px/*, 2px 2px*/;
+    background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
     background-size: 25px 25px;
     overflow: hidden;
     position: relative;
 }
-
 
 .header{
     width: 81.5%;
@@ -31,7 +27,6 @@
     font-style: italic;
     line-height: 0.9;
     color: #fff;
-/*    color: #e02456;*/
     -webkit-text-stroke: 2px #333;
     font-family: 'Montserrat', sans-serif;
 }
@@ -75,7 +70,15 @@
     text-align: center;
     position: relative;
     margin: 0 auto;
+    animation: arrow 1s linear infinite;
 }
+
+@keyframes arrow{
+    0%{transform: translateY(0)}
+    50%{transform: translateY(20px)}
+    100%{transform: translateY(0)}
+}
+
 .start .about_me img{
     width: 40%;
     position: absolute;
@@ -98,7 +101,7 @@
 }
 .start .about_me span:nth-of-type(1){
     background: #d2e2fa;
-    left: 43%; top: 36%;
+    left: 43%; top: 35%;
     transform: translateX(-50%) rotate(10deg);
 }
 .start .about_me span:nth-of-type(2){
@@ -192,7 +195,7 @@
 .intro .intro_text{
     margin-top: 150px;
     width: 43%;
-    font-weight: bold;
+/*    font-weight: bold;*/
     font-family: 'NanumSquare', sans-serif;
     line-height: 1.5;
 }
@@ -206,9 +209,16 @@
 }
 
 
-.skill{}
+.skill{
+    width: 100%;
+    position: relative;
+    padding-top: 5%;
+/*    overflow: hidden;*/
+}
 .skill .title{
-    width: 10%;
+    position: absolute;
+    left: 15%; top: 5%;
+    width: 12%;
     background: #333;
     overflow: hidden;
 }
@@ -219,21 +229,308 @@
     font-weight: 700;
     padding: 0 10px;
 }
-.skill .skill_list{}
-.skill .skill_list ul{}
-.skill .skill_list ul li{
+.skill .skill_list{
+    width: 150%;
+    height: 1300px;
+    padding: 1% 0;
+}
+.skill .skill_list ul{
+    transform: rotate(-6deg);
+    margin: 2% 0;
+    width: 100%;
     position: relative;
 }
-.skill .skill_list ul li div{
-    /*position: absolute;
-    left: 0; top: 0;*/
-    width: 25%; height: 10%;
+
+.skill .line1{left: 2%;}
+.skill .line2{
+    left: -7%;
+    padding-top: 2%;
+}
+
+.skill .skill_list ul li{
+    display: inline-block;
+    margin: 0 2%;
+    width: 16%;
+    height: 230px;
+    position: relative;
+}
+.skill .skill_list ul li >div{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
     background: #fff;
     border: 3px solid #333;
 }
-.skill .skill_list ul li div:nth-of-type(1){}
-.skill .skill_list ul li div:nth-of-type(2){}
-.skill .skill_list ul li div span{}
-.skill .skill_list ul li div p{}
-.skill .skill_list ul li div strong{}
-.skill .skill_list ul li div small{}
+.skill .skill_list ul li >div:nth-of-type(1){
+    left: 24px; top: 24px;
+}
+.skill .skill_list ul li >div:nth-of-type(2){
+    left: 12px; top: 12px;
+}
+.skill .skill_list ul li >div span{
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transform: rotate(-90deg) translateX(-190px) translateY(40px);
+    transform-origin: left;
+    padding: 5px 30px;
+}
+.skill .skill_list ul li div .skill_text{
+    width: 70%;
+    position: absolute;
+    left: 20%; top: 6%;
+}
+.skill .skill_list ul li >div p{
+    width: 100%;
+    font-size: 1.28rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 4% 0;
+    border-bottom: 2px solid #333;
+}
+.skill .skill_list ul li >div strong{
+    width: 100%;
+    padding: 2% 0;
+    font-size: 3.21rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.skill .skill_list ul li >div small{
+    font-size: 1.05rem;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+
+/*스킬리스트 색상지정*/
+.skill .skill_list ul .html >div:nth-of-type(1){
+    background: #ea9280;
+}
+.skill .skill_list ul .html >div:nth-of-type(2){
+    background: #fad8d1;
+}
+.skill .skill_list ul .html >div span{
+    background: #85200c;
+}
+.skill .skill_list ul .css >div:nth-of-type(1){
+    background: #9fd588;
+}
+.skill .skill_list ul .css >div:nth-of-type(2){
+    background: #d8ead2;
+}
+.skill .skill_list ul .css >div span{
+    background: #37761d;
+}
+.skill .skill_list ul .php >div:nth-of-type(1){
+    background: #fcda7a;
+}
+.skill .skill_list ul .php >div:nth-of-type(2){
+    background: #fff2cd;
+}
+.skill .skill_list ul .php >div span{
+    background: #e7b003;
+}
+.skill .skill_list ul .javascript >div:nth-of-type(1){
+    background: #fda649;
+}
+.skill .skill_list ul .javascript >div:nth-of-type(2){
+    background: #fbd6ae;
+}
+.skill .skill_list ul .javascript >div span{
+    background: #e1790b;
+}
+.skill .skill_list ul .jquery >div:nth-of-type(1){
+    background: #428eed;
+}
+.skill .skill_list ul .jquery >div:nth-of-type(2){
+    background: #b6d5fc;
+}
+.skill .skill_list ul .jquery >div span{
+    background: #3587ec;
+}
+
+
+.contact{
+    width: 60%;
+    height: 700px;
+    margin: 0 auto;
+/*    border: 1px solid #f00;*/
+}
+.contact .title{
+    position: relative;
+    left: 0; top: 0;
+    width: 20%;
+    background: #333;
+    overflow: hidden;
+}
+.contact .title span{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.contact .card{
+    width: 45%;
+    position: relative;
+    left: 0; top: 15%;
+    float: left;
+}
+.contact .card > div{
+    width: 100%; height: 335px;
+    position: absolute;
+    left: 15px; top: 15px;
+    border: 3px solid #333;
+    background: #fbd6ae;
+}
+.contact .card > div:nth-of-type(2){
+    background: #fff;
+    left: 0; top: 0;
+}
+.contact .card > div .card_text{
+    width: 80%;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.contact .card > div .brand{
+/*    border: 1px solid #0f0;*/
+    width: 30%;
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    padding: 0 15px;
+}
+.contact .card > div .brand .logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 0.8;
+    color: #fff;
+     -webkit-text-stroke: 2px #333;
+    text-align: center;
+    width: 100%;
+}
+.contact .card > div .brand span:nth-of-type(2){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.contact .card > div .brand::after{
+    content: '';
+    display: inline-block;
+    width: 3px; height: 72px;
+    background: #333;
+    position: absolute;
+    right: 0; top: -7%;
+    vertical-align: middle;
+}
+.contact .card > div .information{
+    display: flex;
+    float: right;
+}
+.contact .card > div .information .left{
+    width: 30%;
+}
+.contact .card > div .information .left p{
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: bold;
+    font-size: 0.86rem;
+}
+.contact .card > div .information .right{
+    width: 50%;
+}
+.contact .card > div .information .right p{
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 0.86rem;
+}
+
+.contact .contact_box{
+    float: right;
+    position: relative;
+}
+.contact .contact_box > div{
+    width: 535px; height: 565px;
+    position: absolute;
+    right: 0; top: 0;
+    background: #fff;
+    border: 3px solid #333;
+    
+}
+.contact .contact_box > div:nth-of-type(1){
+    right: -30px; top: 30px;
+    background: #428eed;
+}
+.contact .contact_box > div:nth-of-type(2){
+    right: -15px; top: 15px;
+    background: #b6d5fc;
+}
+.contact .contact_box > div .circle{
+    width: 100%;
+    text-align: right;
+}
+.contact .contact_box > div .circle::after{
+    content: '';
+    width: 100%; height: 3px;
+    background: #333;
+    display: block;
+}
+.contact .contact_box > div .circle span{
+    width: 20px; height: 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    margin: 10px 0;
+    margin-right: 8px;
+    background: #f7eba7;
+}
+
+.contact .contact_box > div .circle span:nth-of-type(2){
+    background: #aedab4;
+}
+.contact .contact_box > div .circle span:nth-of-type(3){
+    background: #f4cccc;
+}
+
+.contact .contact_box > div form{
+    padding: 50px;
+    position: relative;
+}
+.contact .contact_box > div form p{
+    width: 100%;
+    margin: 30px 0;
+}
+.contact .contact_box > div form p label{
+    width: 150px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact .contact_box > div form p input{
+    box-shadow: none;
+    border-style: none;
+    border-bottom: 2px solid #333;
+    width: 100%; height: 40px;
+}
+.contact .contact_box > div form p input:nth-of-type(2){
+    width: 100%;
+}
+.contact .contact_box > div form p:last-of-type input{
+    border-style: none;
+    width: 25%;
+    background: #fff;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #333;
+    padding: 5px 0;
+    /*position: absolute;
+    right: 50px; bottom: 0;*/
+    cursor: pointer;
+    margin-left: 32px;
+}
+.contact .contact_box > div form p:last-of-type input::before{
+    content: '';
+    position: absolute;
+    left: 15px; top: 15px;
+    width: 25%; height: 100%;
+    background: #f2a4a4;
+    border: 2px solid #333;
+}

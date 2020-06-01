@@ -1,0 +1,218 @@
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/*font-family: 'NanumSquare', sans-serif;*/
+
+.wrap{
+    width: 100%; height: 100vh;
+    background: #fecece;
+    background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+    background-size: 25px 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header{
+    width: 81.5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-style: italic;
+    line-height: 0.9;
+    color: #fff;
+    -webkit-text-stroke: 2px #333;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo img{}
+
+
+.menu{
+    position: relative;
+    width: 110px;
+    height: 25px;
+    margin-top: 1%;
+}
+.menu span{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: #fff;
+    border: 2px solid #333;
+    text-align: center;
+    padding: 8px 0;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.3rem;
+    z-index: 2;
+}
+.menu span:nth-of-type(2){
+    width: 100%; height: 100%;
+    background: #f2a4a4;
+    border: 2px solid #333;
+    z-index: 1;
+    left: 5px; top: 5px;
+}
+.menu:hover span:first-of-type{
+    left: 5px; top: 5px;
+}
+
+.work_detail{
+    width: 65%;
+    margin: 0 auto;
+    padding: 7%;
+/*    border: 1px solid #ff0;*/
+}
+.work_detail div{
+    display: inline-block;
+}
+.work_detail .work_num{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    -webkit-text-stroke: 2px #333;
+}
+
+.work_detail .photo_box{
+    width: 550px; height: 425px;
+    position: relative;
+    vertical-align: middle;
+}
+.work_detail .photo_box p{
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 30px; top: 30px;
+    background: #9fd588;
+    border: 3px solid #333;
+    padding: 10px;
+}
+.work_detail .photo_box p img{
+    width: 100%;
+}
+.work_detail .photo_box p:nth-of-type(2){
+    left: 15px; top: 15px;
+    background: #d8ead2;
+}
+.work_detail .photo_box p:nth-of-type(3){
+    left: 0; top: 0;
+    background: #fff;
+}
+.work_detail .photo_box .indi{
+    position: absolute;
+    right: -50px; bottom: -100px;
+}
+.work_detail .photo_box a{
+    margin: 0 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #fff;
+    -webkit-text-stroke: 1px #333;
+}
+.work_detail .photo_box a:nth-of-type(2){}
+
+.work_detail .photo_box a:hover{
+    color: #e02456;
+}
+
+.work_detail .work_text{
+    width: 30%;
+    vertical-align: middle;
+/*    border: 1px solid #fff;*/
+    margin-left: 200px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.work_detail .work_text .title{
+    width: 70%;
+    background: #333;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.work_detail .work_text .title span{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.work_detail .work_text .about_project{
+    margin-bottom: 30px;
+}
+.work_detail .work_text .about_project h3{
+    font-size: 1.72rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.work_detail .work_text .about_project p{
+    
+}
+.work_detail .work_text .about_project p span{
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.1rem;
+    margin: 3px 0;
+}
+.work_detail .work_text .about_project p span:nth-of-type(1){
+    font-weight: bold;
+    width: 25%;
+}
+.work_detail .work_text .about_project p span:nth-of-type(2){
+    width: 70%;
+}
+
+.work_detail .work_text .about_project p:nth-of-type(5) span:nth-of-type(2){
+    width: 15px; height: 15px;
+    background: #aac9c3;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+.work_detail .work_text .about_project p:nth-of-type(5) span:nth-of-type(3){
+    width: 15px; height: 15px;
+    background: #f0f0f0;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+.work_detail .work_text .overview{
+    
+}
+.work_detail .work_text .overview h3{
+    font-size: 1.72rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.work_detail .work_text .overview p{
+    line-height: 1.6;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.1rem;
+}
+.work_detail .work_text .view{
+    width: 90px; height: 25px;
+    position: absolute;
+    right: 0; bottom: -50px;
+}
+.work_detail .work_text .view span{
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.3rem;
+    width: 100%; height: 100%;
+    background: #f2a4a4;
+    border: 2px solid #333;
+    text-align: center;
+    padding: 8%;
+    position: absolute;
+    right: -5px; bottom: -5px;
+}
+.work_detail .work_text .view span:nth-of-type(2){
+    background: #fff;
+    right: 0; bottom: 0;
+}
+
+.work_detail .work_text .view:hover span:nth-of-type(2){
+    right: -5px; bottom: -5px;
+}
