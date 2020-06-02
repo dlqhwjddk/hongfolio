@@ -1,0 +1,28 @@
+{
+    "work_detail":[
+        {
+            "img_src": "img/work_detail2.jpg",
+            "title": "SINILPOLYTEC",
+            "work_name": "신일폴리텍 기업형 사이트",
+            "work_time": "2주",
+            "work_page": "메인",
+            "work_concept": "",
+            "work_color": "#aac9c3,#f0f0f0",
+            "work_font": "Archivom, 나눔고딕",
+            "overview": "기존 보완할 점이 많은 신일폴리텍 기업 사이트를 리뉴얼하여 처음으로 만든 페이지입니다. 기능을 최대한 줄여 깔끔하게 작업하도록 했습니다.",
+            "work_url":"http://"
+        },
+        {
+            "img_src": "img/work_detail1.jpg",
+            "title": "BONGJUNHO",
+            "work_name": "봉준호 소개사이트",
+            "work_time": "2주",
+            "work_page": "메인 / PROFILE / ALBUM / MOVIE / NEWS",
+            "work_concept": "심플함, 깔끔함",
+            "work_color": "#aac9c3,#f0f0f0",
+            "work_font": "Archivom, 나눔고딕",
+            "overview": "우리나라 영화계의 거장 봉준호 소개사이트입니다.봉준호감독의 프로필, 앨범, 뉴스, 참여한 영화 등 봉준호감독의 모든 것을 담도록 했습니다.",
+            "work_url":"http://"
+        }
+    ]
+}

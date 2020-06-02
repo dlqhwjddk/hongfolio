@@ -1,0 +1,24 @@
+{
+    "work":[
+        
+        {
+           "data_name": "sinil",
+            "class_count": "work1",
+            "work_name": "SINILPOLYTEC",
+            "work_detail": "기업형 신일폴리텍 홈페이지" 
+        },
+        {
+            "data_name": "bongjunho",
+            "class_count": "work2",
+            "work_name": "BONGJUNHO",
+            "work_detail": "반응형 봉준호감독 소개 페이지"
+        },
+        {
+            "data_name": "",
+            "class_count": "work3",
+            "work_name": "WORKING..",
+            "work_detail": "작업중입니다."
+        }
+    
+    ]
+}
