@@ -37,14 +37,14 @@ $(document).ready(function(){
                     listTag += "<p>"+data.work_detail[wIdx].overview+"</p>"
                     listTag += "</section>"
                     listTag += "<a class='view' target='_blank' href='"+data.work_detail[wIdx].work_url+"'><span></span><span>VIEW</span></a>";
-                
-                    $('.photo_box img').attr('src',data.work_detail[wIdx].img_src);
-                    $('.work_text').html(listTag); 
+                                    
+                    $(".photo_box img").attr("src",data.work_detail[wIdx].img_src);
+                    $(".work_text").html(listTag); 
                 }
                 info();
                 
                 
-                $('.indi a').on('click',function(e){
+                $(".indi a").on("click",function(e){
                     e.preventDefault();
                     if($(this).index()){
                        //next
