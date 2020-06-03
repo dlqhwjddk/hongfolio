@@ -133,7 +133,7 @@
 .intro .title{
     position: absolute;
     left: 57%; top: 10%;
-    width: 17%;
+    width: 17%; height: 50px;
     background: #333;
     overflow: hidden;
 }
@@ -142,16 +142,8 @@
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding: 0 10px;
-/*    animation: title 3s linear infinite;*/
 }
-.intro .title span::after{
-    content: attr(data-text)
-}
-/*@keyframes title{
-    0%{margin-left: 0%;}
-    100%{margin-left: -109%;}
-}*/
+
 .intro .profile{
     width: 35%; height: 600px;
     padding: 0.5%;
@@ -223,10 +215,11 @@
     padding-top: 5%;
 /*    overflow: hidden;*/
 }
+
 .skill .title{
     position: absolute;
     left: 15%; top: 5%;
-    width: 12%;
+    width: 13%; height: 50px;
     background: #333;
     overflow: hidden;
 }
@@ -235,32 +228,31 @@
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding: 0 10px;
+    white-space: nowrap;
 }
+
 .skill .skill_list{
     width: 150%;
     height: 1300px;
     padding: 1% 0;
+    transform: rotate(-6deg);
 }
 .skill .skill_list ul{
-    transform: rotate(-6deg);
     margin: 2% 0;
     width: 100%;
     position: relative;
+    transition:.2s linear;
+    height:230px;
 }
 
-.skill .line1{left: 2%;}
-.skill .line2{
-    left: -7%;
-    padding-top: 2%;
-}
+.skill .line1{left: -10%;}
+.skill .line2{left: -10%;}
 
 .skill .skill_list ul li{
-    display: inline-block;
-    margin: 0 2%;
     width: 16%;
     height: 230px;
-    position: relative;
+    position:absolute;
+    left:0; top:0;
 }
 .skill .skill_list ul li >div{
     position: absolute;
@@ -355,18 +347,26 @@
 .skill .skill_list ul .jquery >div span{
     background: #3587ec;
 }
+.skill .skill_list ul .git >div:nth-of-type(1){
+    background: #c47afd;
+}
+.skill .skill_list ul .git >div:nth-of-type(2){
+    background: #e5c3ff;
+}
+.skill .skill_list ul .git >div span{
+    background: #7a23bd;
+}
+
 
 
 .contact{
     width: 60%;
-    height: 700px;
+    height: 820px;
     margin: 0 auto;
 /*    border: 1px solid #f00;*/
 }
 .contact .title{
-    position: relative;
-    left: 0; top: 0;
-    width: 20%;
+    width: 17%; height: 50px;
     background: #333;
     overflow: hidden;
 }
@@ -375,8 +375,8 @@
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding: 0 10px;
 }
+
 .contact .card{
     width: 45%;
     position: relative;
@@ -520,6 +520,9 @@
 .contact .contact_box > div form p input:nth-of-type(2){
     width: 100%;
 }
+.contact .contact_box > div form p:last-of-type{
+    height: 50px;
+}
 .contact .contact_box > div form p:last-of-type input{
     border-style: none;
     width: 25%;
@@ -529,10 +532,14 @@
     font-size: 1.2rem;
     border: 2px solid #333;
     padding: 5px 0;
-    /*position: absolute;
-    right: 50px; bottom: 0;*/
+    position: absolute;
+    right: 0; bottom: 0;
     cursor: pointer;
     margin-left: 32px;
+}
+.contact .contact_box > div form p:last-of-type input:hover{
+    background: #333;
+    color: #fff;
 }
 .contact .contact_box > div form p:last-of-type input::before{
     content: '';

@@ -226,12 +226,14 @@ ul li{
     width:50%;
     height: 100%;
     position:absolute;
+/*    border: 1px solid #f00*/
 }
 
 ul .arrow{
     width: 450px;
     height: 100%;
     margin: 0;
+    
 }
 ul .arrow h3{
     position: absolute;
