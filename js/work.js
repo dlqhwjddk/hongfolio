@@ -12,7 +12,7 @@ $(document).ready(function(){
                 var wIdx = 0;
                 var hash = location.hash.slice(1);
                 wIdx = hash;
-                console.log(wIdx);
+//                console.log(wIdx);
                 
                 var listTag = '';
                 function info(){
@@ -37,11 +37,18 @@ $(document).ready(function(){
                     listTag += "<p>"+data.work_detail[wIdx].overview+"</p>"
                     listTag += "</section>"
                     listTag += "<a class='view' target='_blank' href='"+data.work_detail[wIdx].work_url+"'><span></span><span>VIEW</span></a>";
-                                    
+                    
+                    $(".work_num").html(data.work_detail[wIdx].work_idx);
+                    console.log(data.work_detail[wIdx].work_idx);
                     $(".photo_box img").attr("src",data.work_detail[wIdx].img_src);
-                    $(".work_text").html(listTag); 
+                    $(".work_text").html(listTag);
+                    
+                    /*var cloneTitle = data.work_detail[wIdx].title;
+                    console.log(cloneTitle);
+                    */
                 }
                 info();
+                
                 
                 
                 $(".indi a").on("click",function(e){
@@ -53,14 +60,32 @@ $(document).ready(function(){
                         //prev
                         wIdx--;
                     }
+                    console.log($(this).index())
                     info();
                 })
-
                 
-
+                titleSlide();
             }
+            
         });
+        
     }
     detail();
+    
+    function titleSlide(){
+        var slideW = $(".title span").innerWidth();
+        var cloneTitle = $(".title span").html();
+        var i=0;
+        console.log(slideW);
+        $(".title span").append(cloneTitle);
+
+        setInterval(function(){
+            slideW >= i ? i++ : i = 0;
+            $(".title span").css({
+                marginLeft : -i + "px"
+            })
+        }, 15);       
+    }
+
     //end
 });
