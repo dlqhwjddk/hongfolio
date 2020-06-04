@@ -1,10 +1,17 @@
 $(function(){
 //start
-
+    
+    if(sessionStorage.intro == 'on'){
+        $('.intro').hide();
+    }
+    sessionStorage.intro = 'on';
+  
     /*인트로 애니메이션 끝난 후*/
     setInterval(function(){
         $(".intro").slideUp();
     },4500);
+    
+//    $(".intro").addClass("active");
 
     /*액자 클릭 시 페이지이동*/
     $(".photo_frame").click(function(){
@@ -14,7 +21,7 @@ $(function(){
 
     function work(){
         $.ajax({
-            url : "js/main/work.json",
+            url : "asset/js/main/work.json",
             type : 'GET',
             dataType : 'json',
             success : function(data){
@@ -29,7 +36,7 @@ $(function(){
                     listTag += "<p></p>"
                     listTag += "<p></p>"
                     listTag += "<p class='first_p'>"
-                    listTag += "<img src='img/work" + (i+1) + ".jpg' alt=''>"
+                    listTag += "<img src='asset/img/work" + (i+1) + ".jpg' alt=''>"
                     listTag += "</p>"
                     listTag += "</div>"
                     listTag += "<h3 class='work_name'>" + data.work[i].work_name + "</h3>"

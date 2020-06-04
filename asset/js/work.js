@@ -5,7 +5,7 @@ $(document).ready(function(){
     function detail(){
         
         $.ajax({
-            url : 'js/work/work_detail.json',
+            url : 'asset/js/work/work_detail.json',
             type : 'GET',
             dataType : 'json',
             success : function(data){
@@ -43,12 +43,9 @@ $(document).ready(function(){
                     $(".photo_box img").attr("src",data.work_detail[wIdx].img_src);
                     $(".work_text").html(listTag);
                     
-                    /*var cloneTitle = data.work_detail[wIdx].title;
-                    console.log(cloneTitle);
-                    */
+                    
                 }
                 info();
-                
                 
                 
                 $(".indi a").on("click",function(e){

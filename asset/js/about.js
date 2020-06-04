@@ -86,8 +86,10 @@ $(function(){
         }
         skillAni2();
     }
-    
-    
-    
+
     
 });
+
+function goBack(){
+    window.history.back();
+}

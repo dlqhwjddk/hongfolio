@@ -14,6 +14,7 @@
     position: fixed;
     left: 0; top: 0;
     z-index: 10;
+    
 }
 .text{
     width: 25%;
@@ -84,6 +85,7 @@
     100%{transform: rotate(2deg);}
 }
 
+
 .wrap{
     width: 100%;
     height: 100vh;
@@ -108,7 +110,7 @@
     padding-top:50px;
     left: 0%; top: 0%;
     transform-origin: 50% top;
-    animation: frame 4s 5s linear infinite;
+    animation: frame 4s linear infinite;
     cursor: pointer;
 }
 .photo_frame::before{
