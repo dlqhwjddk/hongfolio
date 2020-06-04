@@ -108,18 +108,6 @@
     background: #b6d0f8;
     left: 58%;
 }
-.start >p{
-    width: 100%;
-    text-align: center;
-    font-size: 1.1rem;
-    animation: scroll .7s linear infinite;
-}
-
-@keyframes scroll{
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
-}
 
 .intro{
     width: 70%;

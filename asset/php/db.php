@@ -1,12 +1,10 @@
 <?
     $host = "localhost";
-    $user = "root";
-    $pw = "";
-    $dbName = "sql-test"; 
+    $user = "wjddk427";
+    $pw = "h24100427!";
+    $dbName = "wjddk427"; 
 
     $dbConnect = mysqli_connect($host, $user, $pw, $dbName);
-
-
     $dbcon = new mysqli($host, $user, $pw, $dbName);
     
     function mq($sql){
@@ -14,9 +12,4 @@
         return $dbcon->query($sql);
     }
 
-    function page($url){
-        echo "<script>
-                location.href=\"$url\";
-              </script>";
-    }
 ?>

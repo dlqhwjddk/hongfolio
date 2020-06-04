@@ -83,6 +83,10 @@ $(document).ready(function(){
             })
         }, 15);       
     }
-
+    
+    function goBack(){
+        window.history.back();
+    }
+    
     //end
 });

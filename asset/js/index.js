@@ -15,7 +15,7 @@ $(function(){
 
     /*액자 클릭 시 페이지이동*/
     $(".photo_frame").click(function(){
-        location.href = "about.html";
+        location.href = "about.php";
     });
 
 

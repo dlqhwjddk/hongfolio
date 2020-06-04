@@ -1,5 +1,6 @@
 $(function(){
     
+    
     /*타이틀문구 슬라이드*/
     function titleSlide(num){
         var slideW = $(".title span").eq(num).innerWidth();
@@ -87,7 +88,13 @@ $(function(){
         skillAni2();
     }
 
-    
+    $('.top_box a').on('click', function(e) {
+        e.preventDefault();
+        $('html').animate({
+            scrollTop: 0
+        })
+    });
+
 });
 
 function goBack(){
