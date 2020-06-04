@@ -179,13 +179,11 @@
 
 .work_detail .work_text .about_project p:nth-of-type(5) span:nth-of-type(2){
     width: 15px; height: 15px;
-/*    background: #aac9c3;*/
     border: 1px solid #333;
     border-radius: 15px;
 }
 .work_detail .work_text .about_project p:nth-of-type(5) span:nth-of-type(3){
     width: 15px; height: 15px;
-/*    background: #f0f0f0;*/
     border: 1px solid #333;
     border-radius: 15px;
 }

@@ -1,4 +1,25 @@
 
+
+포트폴리오 사이트
 1. contact 버튼 활성화
 2. 내사진으로 바꿔놓기
 3. 반응형작업
+4. work 상세페이지 span 문제 처리
+
+
+신일폴리텍 사이트
+1.product hover부분 수정
+2.지도 안뜨는거 수정
+
+
+
+봉준호 사이트
+1.게시판수정
+2.movie 팝업 css 수정
+3.반응형작업
+4.메인 비주얼이미지 찾기
+
+
+
+발표자료 ppt ㅇㅖ시
+https://docs.google.com/presentation/d/18OoIYTPi_JXIXuIWqf6pD9Ld87PNN_QXlYqb3iQ46AA/edit?usp=sharing

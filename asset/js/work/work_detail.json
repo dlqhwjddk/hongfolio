@@ -25,6 +25,19 @@
             "work_font": "Archivom, 나눔고딕",
             "overview": "우리나라 영화계의 거장 봉준호 소개사이트입니다. 봉준호감독의 프로필, 앨범, 뉴스, 참여한 영화 등 봉준호감독의 모든 것을 담도록 했습니다.",
             "work_url":"http://dlqhwjddk.dothome.co.kr/"
+        },
+        {
+            "work_idx": "00",
+            "img_src": "",
+            "title": "WORKING..&nbsp;&nbsp;",
+            "work_name": "작업중입니다.",
+            "work_time": "",
+            "work_page": "",
+            "work_concept": "",
+            "work_color": "",
+            "work_font": "",
+            "overview": "",
+            "work_url":""
         }
     ]
 }

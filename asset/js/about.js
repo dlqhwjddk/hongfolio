@@ -26,7 +26,7 @@ $(function(){
         var skTop = $('.skill').offset().top - $(window).height();
         if(skTop < $(this).scrollTop() && bb){
             bb = false;
-            console.log('a');
+//            console.log('a');
             skillFun();    
         }
     });
@@ -93,6 +93,13 @@ $(function(){
         $('html').animate({
             scrollTop: 0
         })
+    });
+    $(".menu").eq(1).on("click", function(e){
+  
+        e.preventDefault();
+        $("html").animate({
+            scrollTop: 3334
+        });
     });
 
 });
