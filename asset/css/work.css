@@ -3,7 +3,23 @@
 /*font-family: 'Montserrat', sans-serif;*/
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /*font-family: 'NanumSquare', sans-serif;*/
-
+.mobile{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #fecece;
+}
+.mobile p{
+    white-space: pre-line;
+    width: 85%;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: #666;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
 .wrap{
     width: 100%; height: 100vh;
     background: #fecece;
@@ -24,7 +40,7 @@
 
 .logo{
     position: absolute;
-    left: 50%; /*top: 5%;*/
+    left: 50%; top: 5%;
     transform: translateX(-50%);
     font-weight: 700;
     font-size: 3.2rem;
@@ -153,6 +169,7 @@
 }
 
 .work_detail .work_text .about_project{
+    width: 100%;
     margin-bottom: 30px;
 }
 .work_detail .work_text .about_project h3{
@@ -223,4 +240,287 @@
 
 .work_detail .work_text .view:hover span:nth-of-type(2){
     right: -5px; bottom: -5px;
+}
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .mobile{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: #fecece;
+    }
+    .mobile p{
+        white-space: pre-line;
+        width: 85%;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        font-weight: 400;
+        color: #666;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .wrap{
+        width: 100%; height: 100%;
+        background: #fecece;
+        background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+        background-size: 25px 25px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .header{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 8%;
+        position: relative;
+    }
+
+    .logo{
+        position: absolute;
+        left: 50%; top: 5%;
+        transform: translateX(-50%);
+        font-weight: 700;
+        font-size: 3.2rem;
+        font-style: italic;
+        line-height: 0.9;
+        color: #fff;
+        -webkit-text-stroke: 2px #333;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .logo img{}
+
+
+    .menu{
+        position: relative;
+        width: 110px;
+        height: 25px;
+        margin-top: 3%;
+    }
+    .menu span{
+        position: absolute;
+        width: 100%; height: 100%;
+        background: #fff;
+        border: 2px solid #333;
+        text-align: center;
+        padding: 8px 0;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.3rem;
+        z-index: 2;
+    }
+    .menu span:nth-of-type(2){
+        width: 100%; height: 100%;
+        background: #f2a4a4;
+        border: 2px solid #333;
+        z-index: 1;
+        left: 5px; top: 5px;
+    }
+    .menu:hover span:first-of-type{
+        left: 5px; top: 5px;
+    }
+
+    .header nav{
+        width: 20%; height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        position: absolute;
+        right: 0%; top: -45%;
+    }
+    .work_detail{
+        width: 70%;
+        margin: 0 auto;
+        padding: 20% 0;
+/*        border: 1px solid #ff0;*/
+    }
+    .work_detail > div{
+        display: inline-block;
+    }
+    .work_detail .work_num{
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        -webkit-text-stroke: 2px #333;
+    }
+
+    .work_detail .photo_box{
+        width: 92%; height: 280px;
+        position: relative;
+        
+/*        vertical-align: middle;*/
+    }
+    .work_detail .photo_box p{
+        width: 100%; height: 100%;
+        position: absolute;
+        left: 30px; top: 30px;
+        background: #9fd588;
+        border: 3px solid #333;
+        padding: 10px;
+    }
+    .work_detail .photo_box p img{
+        width: 100%;
+    }
+    .work_detail .photo_box p:nth-of-type(2){
+        left: 15px; top: 15px;
+        background: #d8ead2;
+    }
+    .work_detail .photo_box p:nth-of-type(3){
+        left: 0; top: 0;
+        background: #fff;
+    }
+    .work_detail .photo_box .indi{
+        position: absolute;
+        right: -50px; bottom: -100px;
+    }
+    .work_detail .photo_box a{
+        margin: 0 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 1.3rem;
+        color: #fff;
+        -webkit-text-stroke: 1px #333;
+    }
+    .work_detail .photo_box a:nth-of-type(2){}
+
+    .work_detail .photo_box a:hover{
+        color: #e02456;
+    }
+
+    .work_detail .work_text{
+        width: 100%;
+        vertical-align: middle;
+        margin-top: 100px;
+        margin-left: 5px;
+        position: static;
+/*        border: 1px solid #f00;*/
+    }
+
+    .work_detail .work_text .title{
+        /*position: absolute;
+        width: 30%;
+        right: 50%; top: 20%;
+        transform: translateX(50%);*/
+        display: none;
+        background: #333;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .work_detail .work_text .title span{
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    .work_detail .work_text .about_project{
+        width: 100%;
+/*        margin: 0 auto;*/
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .work_detail .work_text .about_project h3{
+        font-size: 1.72rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .work_detail .work_text .about_project p{
+        width: 100%;
+    }
+    .work_detail .work_text .about_project p span{
+        vertical-align: middle;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.1rem;
+        margin: 3px 0;
+    }
+    .work_detail .work_text .about_project p span:nth-of-type(1){
+        font-weight: bold;
+        width: 20%;
+    }
+    .work_detail .work_text .about_project p span:nth-of-type(2){
+        width: 78%;
+    }
+
+    .work_detail .work_text .about_project p:nth-of-type(5) span:nth-of-type(2){
+        width: 15px; height: 15px;
+        border: 1px solid #333;
+        border-radius: 15px;
+    }
+    .work_detail .work_text .about_project p:nth-of-type(5) span:nth-of-type(3){
+        width: 15px; height: 15px;
+        border: 1px solid #333;
+        border-radius: 15px;
+    }
+    .work_detail .work_text .overview{
+        width: 100%;
+        /*margin: 0 auto;*/
+    }
+    .work_detail .work_text .overview h3{
+        font-size: 1.72rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .work_detail .work_text .overview p{
+        line-height: 1.6;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.1rem;
+    }
+    .work_detail .work_text .view{
+        width: 90px; height: 25px;
+        position: static;
+        /*right: 0; bottom: -50px;*/
+        transform: translateX(15px) translateY(50px);
+    }
+    .work_detail .work_text .view span{
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.3rem;
+        width: 100%; height: 100%;
+        background: #f2a4a4;
+        border: 2px solid #333;
+        text-align: center;
+        padding: 8%;
+        position: absolute;
+        right: -5px; bottom: -5px;
+    }
+    .work_detail .work_text .view span:nth-of-type(2){
+        background: #fff;
+        right: 0; bottom: 0;
+    }
+
+    .work_detail .work_text .view:hover span:nth-of-type(2){
+        right: -5px; bottom: -5px;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 767px){
+    .wrap{
+        width: 400px;
+        height: 100vh;
+        background: #fecece;
+        background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+        background-size: 25px 25px, 25px 25px, 2px 2px;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: #fecece;
+    }
+    .mobile p{
+        white-space: pre-line;
+        width: 90%;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        font-weight: 400;
+        color: #666;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }

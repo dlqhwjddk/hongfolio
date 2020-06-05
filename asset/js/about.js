@@ -64,7 +64,7 @@ $(function(){
             var cloneSkill = $(".line2").html();
             var i=0;
             $(".line2").prepend(cloneSkill);
-
+            
             $('.line2 li').each(function(i){
                 $(this).css({
                     left: (20 * i)-76 +'%'
@@ -94,13 +94,14 @@ $(function(){
             scrollTop: 0
         })
     });
-    $(".menu").eq(1).on("click", function(e){
+    /*$(".menu").eq(1).on("click", function(e){
   
         e.preventDefault();
         $("html").animate({
             scrollTop: 3334
         });
-    });
+    });*/
+    
 
 });
 

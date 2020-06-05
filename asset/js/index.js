@@ -1,6 +1,7 @@
 $(function(){
 //start
     
+    /*인트로 처음 한 번만 보여주기*/
     if(sessionStorage.intro == 'on'){
         $('.intro').hide();
     }
@@ -19,10 +20,10 @@ $(function(){
 
     /*CONTACT버튼 클릭 시 about페이지 이동*/
     $("nav a").eq(1).click(function(){
-        location.href = "about.php";
+        location.href = "about.php#contact";
     });
     
-
+    //ajax
     function work(){
         $.ajax({
             url : "asset/js/main/work.json",
@@ -110,6 +111,7 @@ $(function(){
             }
         });
         
+        /*드래그이벤트*/
         var dX,mX,dragEnt;
         $(window).on({
             mouseup :function(){
@@ -125,8 +127,6 @@ $(function(){
                     dX < mX ? aa(0) : aa(1);
                 }
                 
-                
-                
                 //aa();
                 function aa(m){
                     if(boolean2){
@@ -138,6 +138,7 @@ $(function(){
                 
             } 
         });
+        
         
         function slideAni(){
              move = (-44 * sIdx)-init + '%';

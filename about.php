@@ -1,17 +1,27 @@
 <?
     include_once $_SERVER['DOCUMENT_ROOT']."/asset/php/db.php";
 ?>
-    <!DOCTYPE html>
+     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>HONGFOLIO</title>
         <link rel="stylesheet" href="asset/css/about.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="asset/js/about.js"></script>
     </head>
     <body>
-
+        <div class="mobile">
+            <p>
+                본 페이지는 상업용 목적이 아닌
+                개인용 포트폴리오 목적으로 제작되었습니다.
+                1920*1080 사이즈 또는
+                태블릿 화면에 최적화 되어있으니,
+                해당 사이즈로 보시는 것을 권장합니다.
+            </p>
+        </div>
+        
         <div class="wrap" id="top">
 
             <div class="header">
@@ -246,7 +256,84 @@
                         </li>
                     </ul>
                 </div>
-
+                <div class="skill_list2">
+                    <ul>
+                        <li class="html">
+                            <div></div>
+                            <div></div>
+                            <div>
+                                <span>MY SKILL</span>
+                                <div class="skill_text">
+                                    <p>FRONT-END</p>
+                                    <strong>HTML5</strong>
+                                    <small>상황에 맞는 태그 사용을 할 수 있고, 각 태그들의 기능과 필수속성을 정확히 알고있습니다.</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="css">
+                            <div></div>
+                            <div></div>
+                            <div>
+                                <span>MY SKILL</span>
+                                <div class="skill_text">
+                                    <p>FRONT-END</p>
+                                    <strong>CSS3</strong>
+                                    <small>CSS 속성에 대해 잘 알고있고, 
+                                    콘텐츠 페이지의 각종 스타일링을 할 수 있습니다.</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="jquery">
+                            <div></div>
+                            <div></div>
+                            <div>
+                                <span>MY SKILL</span>
+                                <div class="skill_text">
+                                    <p>FRONT-END</p>
+                                    <strong>JQUERY</strong>
+                                    <small>간단한 동적 화면을 수월하게 할 수 있습니다.</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="javascript">
+                            <div></div>
+                            <div></div>
+                            <div>
+                                <span>MY SKILL</span>
+                                <div class="skill_text">
+                                    <p>FRONT-END</p>
+                                    <strong>JAVASCRIPT</strong>
+                                    <small>jQuery 문법과 혼합하여 동적 기능 구현을 할 수 있습니다.</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="php">
+                            <div></div>
+                            <div></div>
+                            <div>
+                                <span>MY SKILL</span>
+                                <div class="skill_text">
+                                    <p>FRONT-END</p>
+                                    <strong>PHP</strong>
+                                    <small>MYSQL을 이용하여 사용자, 관리자
+                                    페이지를 만들수 있습니다. </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="git">
+                            <div></div>
+                            <div></div>
+                            <div>
+                                <span>MY SKILL</span>
+                                <div class="skill_text">
+                                    <p>FRONT-END</p>
+                                    <strong>GIT</strong>
+                                    <small>ㅇㅁㅇㄻㅇㄻㄻㄴㅇㄻㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹ</small>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="contact" id="contact">
@@ -258,7 +345,7 @@
                     <div>
                         <div class="card_text">
                             <section class="brand">
-                                <span class="logo">HONG<br>FOLIO</span>
+                                <span>HONG<br>FOLIO</span>
                                 <span>web developer</span>
                             </section>
                             <section class="information">
