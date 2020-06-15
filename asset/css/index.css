@@ -376,7 +376,6 @@ ul .work_list small{
     75%{transform: rotate(-15deg); }
     100%{transform: rotate(0deg);}
 }
-
 @media all and (min-width: 768px) and (max-width: 1024px) {
     
     .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}

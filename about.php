@@ -197,7 +197,7 @@
                                 <div class="skill_text">
                                     <p>FRONT-END</p>
                                     <strong>GIT</strong>
-                                    <small>ㅇㅁㅇㄻㅇㄻㄻㄴㅇㄻㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹ</small>
+                                    <small>git을 사용하여 형상관리를 할 수 있습니다.</small>
                                 </div>
                             </div>
                         </li>
@@ -250,7 +250,7 @@
                                 <div class="skill_text">
                                     <p>FRONT-END</p>
                                     <strong>GIT</strong>
-                                    <small>ㅇㅁㅇㄻㅇㄻㄻㄴㅇㄻㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹ</small>
+                                    <small>git을 사용하여 형상관리를 할 수 있습니다.</small>
                                 </div>
                             </div>
                         </li>
