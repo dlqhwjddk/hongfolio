@@ -112,32 +112,32 @@ $(function(){
         });
         
         /*드래그이벤트*/
-        var dX,mX,dragEnt;
-        $(window).on({
-            mouseup :function(){
-                boolean2=true;
-            },
-            mousedown :function(e){
-                dX = e.pageX;
-                dragEnt = 'down';
-            },
-            mousemove :function(e){
-                mX = e.pageX;
-                if(dragEnt=='down'){
-                    dX < mX ? aa(0) : aa(1);
-                }
+        // var dX,mX,dragEnt;
+        // $(window).on({
+        //     mouseup :function(){
+        //         boolean2=true;
+        //     },
+        //     mousedown :function(e){
+        //         dX = e.pageX;
+        //         dragEnt = 'down';
+        //     },
+        //     mousemove :function(e){
+        //         mX = e.pageX;
+        //         if(dragEnt=='down'){
+        //             dX < mX ? aa(0) : aa(1);
+        //         }
                 
-                //aa();
-                function aa(m){
-                    if(boolean2){
-                       boolean2=false;
-                        m==0 ? sIdx-- : sIdx++;
-                        slideAni();
-                    }
-                }
+        //         //aa();
+        //         function aa(m){
+        //             if(boolean2){
+        //                boolean2=false;
+        //                 m==0 ? sIdx-- : sIdx++;
+        //                 slideAni();
+        //             }
+        //         }
                 
-            } 
-        });
+        //     } 
+        // });
         
         
         function slideAni(){

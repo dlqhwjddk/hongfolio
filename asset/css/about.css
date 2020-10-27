@@ -182,7 +182,6 @@
 }
 .intro .profile .top .text{
     padding: 0 4%;
-    white-space: pre-line;
     font-family: 'NanumSquare', sans-serif;
 }
 .intro .profile .top .text p{
@@ -190,6 +189,7 @@
     text-align: left;
     font-size: 1.5rem;
     font-weight: bold;
+    white-space: pre-line;
 }
 .intro .profile .top .text span{
     width: 100%;

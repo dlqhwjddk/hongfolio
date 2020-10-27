@@ -241,7 +241,7 @@
 .work_detail .work_text .view:hover span:nth-of-type(2){
     right: -5px; bottom: -5px;
 }
-@media all and (min-width: 768px) and (max-width: 1023px){
+@media all and (min-width: 768px) and (max-width: 1024px){
     .mobile{
         display: none;
         width: 100%;
@@ -346,10 +346,8 @@
     }
 
     .work_detail .photo_box{
-        width: 92%; height: 280px;
+        width: 92%; height: 375px;
         position: relative;
-        
-/*        vertical-align: middle;*/
     }
     .work_detail .photo_box p{
         width: 100%; height: 100%;

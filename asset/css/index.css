@@ -237,7 +237,7 @@ nav a span:nth-of-type(2){
 /*    height: 570px;*/
     height: 50vh;
     position: relative;
-    left: 0; top: 5%;
+    left: 0; top: 10%;
     transform: rotate(-8deg);
 }
 .slide ul{
@@ -607,10 +607,11 @@ ul .work_list small{
         left: 5px; top: 5px;
     }
     .slide{
-        width: 100%;
+        border: #e02456;
+        width: 170%;
         height: 500px;
         position: relative;
-        left: 0; top: 10%;
+        left: -38%; top: 10%;
         transform: rotate(-8deg) scale(0.9);
     }
     .slide ul{
@@ -620,14 +621,14 @@ ul .work_list small{
     }
 
     ul li{
-        width:50% !important;
+        width:25% !important;
         height: 100%;
 /*        border: 1px solid #f00;*/
 /*        margin: 0 50%;*/
     }
 
     ul .arrow{
-        width: 15%;
+        width: 5%;
         height: 100%;
 /*        margin: 0 30% 0 0;*/
 /*        left: 170% !important;*/
