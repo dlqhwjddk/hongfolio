@@ -59,7 +59,7 @@
                     <div></div>
                     <div class="top">
 
-                        <p><img src="asset/img/photo2.jpg" alt=""></p>
+                        <p><img src="asset/img/photo21.jpg" alt=""></p>
 
                         <div class="text">
                             <p>홍정아
@@ -328,7 +328,7 @@
                                 <div class="skill_text">
                                     <p>FRONT-END</p>
                                     <strong>GIT</strong>
-                                    <small>ㅇㅁㅇㄻㅇㄻㄻㄴㅇㄻㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹ</small>
+                                    <small>git을 사용하여 형상관리를 할 수 있습니다.</small>
                                 </div>
                             </div>
                         </li>
@@ -345,7 +345,7 @@
                     <div>
                         <div class="card_text">
                             <section class="brand">
-                                <span>HONG<br>FOLIO</span>
+                                <span class="logo">HONG<br>FOLIO</span>
                                 <span>web developer</span>
                             </section>
                             <section class="information">

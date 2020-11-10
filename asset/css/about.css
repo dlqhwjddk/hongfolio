@@ -431,12 +431,14 @@
 .contact .card > div .brand span:nth-of-type(2){
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 0.8rem;
     font-style: italic;
+    margin: 45px 0 0 27px;
 }
 .contact .card > div .brand::after{
     content: '';
     display: inline-block;
-    width: 3px; height: 72px;
+    width: 2px; height: 72px;
     background: #333;
     position: absolute;
     right: 0; top: -7%;
@@ -581,8 +583,855 @@
 .top_box a:hover p{
     color: #e02456;
 }
-
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all and (min-width: 1441px) and (max-width: 1700px){
+    .intro .profile > div{
+        width: 100%; height: 85%;
+        position: absolute;
+        left: 0; top: 0;
+        background: #fff;
+        border: 3px solid #333;
+    }
+    
+    .skill{
+        width: 100%;
+        position: relative;
+        padding-top: 5%;
+    /*    overflow: hidden;*/
+    }
+    
+    .skill .title{
+        position: absolute;
+        left: 15%; top: 5%;
+        width: 13%; height: 50px;
+        background: #333;
+        overflow: hidden;
+    }
+    .skill .title span{
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .skill .skill_list2{
+        display: none;
+    }
+    .skill .skill_list{
+        width: 150%;
+        height: 1300px;
+        padding: 1% 0;
+        transform: rotate(-6deg);
+    }
+    .skill .skill_list ul{
+        margin: 2% 0;
+        width: 110%;
+        position: relative;
+        transition:.2s linear;
+        height:230px;
+    }
+    
+    .skill .line1{left: -10%;}
+    .skill .line2{left: -10%;}
+    
+    .skill .skill_list ul li{
+        width: 16%;
+        height: 230px;
+        position:absolute;
+        left:0; top:0;
+    }
+    .skill .skill_list ul li >div{
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        background: #fff;
+        border: 3px solid #333;
+    }
+    .skill .skill_list ul li >div:nth-of-type(1){
+        left: 24px; top: 24px;
+    }
+    .skill .skill_list ul li >div:nth-of-type(2){
+        left: 12px; top: 12px;
+    }
+    .skill .skill_list ul li >div span{
+        font-size: 1.8rem;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        transform: rotate(-90deg) translateX(-190px) translateY(40px);
+        transform-origin: left;
+        padding: 5px 30px;
+    }
+    .skill .skill_list ul li div .skill_text{
+        width: 70%;
+        position: absolute;
+        left: 20%; top: 6%;
+    }
+    .skill .skill_list ul li >div p{
+        width: 100%;
+        font-size: 1.28rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        padding: 4% 0;
+        border-bottom: 2px solid #333;
+    }
+    .skill .skill_list ul li >div strong{
+        width: 100%;
+        padding: 2% 0;
+        font-size: 2.8rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .skill .skill_list ul li >div small{
+        font-size: 1.05rem;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    
+    
+    /*스킬리스트 색상지정*/
+    .skill .skill_list ul .html >div:nth-of-type(1){
+        background: #ea9280;
+    }
+    .skill .skill_list ul .html >div:nth-of-type(2){
+        background: #fad8d1;
+    }
+    .skill .skill_list ul .html >div span{
+        background: #85200c;
+    }
+    .skill .skill_list ul .css >div:nth-of-type(1){
+        background: #9fd588;
+    }
+    .skill .skill_list ul .css >div:nth-of-type(2){
+        background: #d8ead2;
+    }
+    .skill .skill_list ul .css >div span{
+        background: #37761d;
+    }
+    .skill .skill_list ul .php >div:nth-of-type(1){
+        background: #fcda7a;
+    }
+    .skill .skill_list ul .php >div:nth-of-type(2){
+        background: #fff2cd;
+    }
+    .skill .skill_list ul .php >div span{
+        background: #e7b003;
+    }
+    .skill .skill_list ul .javascript >div:nth-of-type(1){
+        background: #fda649;
+    }
+    .skill .skill_list ul .javascript >div:nth-of-type(2){
+        background: #fbd6ae;
+    }
+    .skill .skill_list ul .javascript >div span{
+        background: #e1790b;
+    }
+    .skill .skill_list ul .jquery >div:nth-of-type(1){
+        background: #428eed;
+    }
+    .skill .skill_list ul .jquery >div:nth-of-type(2){
+        background: #b6d5fc;
+    }
+    .skill .skill_list ul .jquery >div span{
+        background: #3587ec;
+    }
+    .skill .skill_list ul .git >div:nth-of-type(1){
+        background: #c47afd;
+    }
+    .skill .skill_list ul .git >div:nth-of-type(2){
+        background: #e5c3ff;
+    }
+    .skill .skill_list ul .git >div span{
+        background: #7a23bd;
+    }
+    
+    
+    
+    .contact{
+        width: 60%;
+        height: 820px;
+        margin: 0 auto;
+    /*    border: 1px solid #f00;*/
+    }
+    .contact .title{
+        width: 17%; height: 50px;
+        background: #333;
+        overflow: hidden;
+    }
+    .contact .title span{
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+    .contact .card{
+        width: 45%;
+        position: relative;
+        left: 0; top: 15%;
+        float: left;
+    }
+    .contact .card > div{
+        width: 100%; height: 280px;
+        position: absolute;
+        left: 15px; top: 15px;
+        border: 3px solid #333;
+        background: #fbd6ae;
+    }
+    .contact .card > div:nth-of-type(2){
+        background: #fff;
+        left: 0; top: 0;
+    }
+    .contact .card > div .card_text{
+        width: 85%;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    .contact .card > div .brand{
+    /*    border: 1px solid #0f0;*/
+        width: 30%;
+        /* position: relative; */
+        vertical-align: middle;
+        float: left;
+        padding: 0;
+    }
+    .contact .card > div .brand .logo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 1.7rem;
+        font-style: italic;
+        line-height: 0.8;
+        color: #fff;
+         -webkit-text-stroke: 2px #333;
+        text-align: center;
+        width: 100%;
+    }
+    .contact .card > div .brand span:nth-of-type(2){
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.8rem;
+        margin: 50px 0 0 14px;
+    }
+    .contact .card > div .brand::after{
+        content: '';
+        display: inline-block;
+        width: 1.5px; height: 72px;
+        background: #333;
+        position: absolute;
+        right: -10px; top: -7%;
+        vertical-align: middle;
+    }
+    .contact .card > div .information{
+        display: flex;
+        float: right;
+    }
+    .contact .card > div .information .left{
+        width: 30%;
+    }
+    .contact .card > div .information .left p{
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 0.86rem;
+    }
+    .contact .card > div .information .right{
+        width: 50%;
+    }
+    .contact .card > div .information .right p{
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 0.86rem;
+    }
+    
+    .contact .contact_box{
+        float: right;
+        position: relative;
+    }
+    .contact .contact_box > div{
+        width: 450px; height: 565px;
+        position: absolute;
+        right: 0; top: 0;
+        background: #fff;
+        border: 3px solid #333;
+        
+    }
+    .contact .contact_box > div:nth-of-type(1){
+        right: -30px; top: 30px;
+        background: #428eed;
+    }
+    .contact .contact_box > div:nth-of-type(2){
+        right: -15px; top: 15px;
+        background: #b6d5fc;
+    }
+    .contact .contact_box > div .circle{
+        width: 100%;
+        text-align: right;
+    }
+    .contact .contact_box > div .circle::after{
+        content: '';
+        width: 100%; height: 3px;
+        background: #333;
+        display: block;
+    }
+    .contact .contact_box > div .circle span{
+        width: 20px; height: 20px;
+        border: 2px solid #333;
+        border-radius: 20px;
+        margin: 10px 0;
+        margin-right: 8px;
+        background: #f7eba7;
+    }
+    
+    .contact .contact_box > div .circle span:nth-of-type(2){
+        background: #aedab4;
+    }
+    .contact .contact_box > div .circle span:nth-of-type(3){
+        background: #f4cccc;
+    }
+    
+    .contact .contact_box > div form{
+        padding: 50px;
+        position: relative;
+    }
+    .contact .contact_box > div form p{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .contact .contact_box > div form p label{
+        width: 150px;
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .contact .contact_box > div form p input,
+    .contact .contact_box > div form p textarea
+    {
+        box-shadow: none;
+        border-style: none;
+        border-bottom: 2px solid #333;
+        width: 100%; height: 40px;
+        margin-top: 10px;
+    }
+    .contact .contact_box > div form p textarea{
+        height:70px;
+    }
+    .contact .contact_box > div form p input:nth-of-type(2){
+        width: 100%;
+    }
+    .contact .contact_box > div form p:last-of-type{
+        height: 50px;
+    }
+    .contact .contact_box > div form p:last-of-type input{
+        border-style: none;
+        width: 25%;
+        background: #fff;
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: 2px solid #333;
+        padding: 5px 0;
+        position: absolute;
+        right: 0; bottom: 0;
+        cursor: pointer;
+        margin-left: 32px;
+    }
+    .contact .contact_box > div form p:last-of-type input:hover{
+        background: #333;
+        color: #fff;
+    }
+    .top_box{
+        width: 100%;
+        position: relative;
+    }
+    .top_box a{
+        position: fixed;
+        right: 5%;
+        bottom: 150px;
+    }
+    .top_box a img{}
+    .top_box a p{
+        white-space: pre-line;
+    /*    transform: translateX(-70%);*/
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.7rem;
+        color: #fff;
+        -webkit-text-stroke: 1px #333;
+    }
+    
+    .top_box a:hover p{
+        color: #e02456;
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1440px){
+    .start{
+        width: 100%;
+        height: 87vh;
+    }
+    .start .about_me{
+        width: 35%; height: 70%;
+        text-align: center;
+        position: relative;
+        left: 0; top: 15%;
+        margin: 0 auto;
+        animation: arrow 1s linear infinite;
+    }
+    
+    @keyframes arrow{
+        0%{transform: translateY(0)}
+        50%{transform: translateY(20px)}
+        100%{transform: translateY(0)}
+    }
+    
+    .start .about_me img{
+        width: 40%;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .start .about_me img:first-of-type{
+        left: 52%; top: 51%;
+    }
+    .start .about_me span{
+        width: 55%;
+        position: absolute;
+        left: 50%; top: 43%;
+        transform: translateX(-50%);
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        border: 2px solid #333;
+    }
+    .start .about_me span:nth-of-type(1){
+        background: #d2e2fa;
+        left: 43%; top: 20%;
+        transform: translateX(-50%) rotate(10deg);
+    }
+    .start .about_me span:nth-of-type(2){
+        background: #b6d0f8;
+        left: 58%; top: 35%;
+    }
+    .intro .title{
+        position: absolute;
+        left: 57%; top: 0;
+        width: 17%; height: 50px;
+        background: #333;
+        overflow: hidden;
+    }
+    .intro .profile > div{
+        width: 100%; height: 85%;
+        position: absolute;
+        left: 0; top: 0;
+        background: #fff;
+        border: 3px solid #333;
+    }
+    .intro .profile > div:nth-of-type(1){
+        background: #f7e47e;
+        left: 30px; top: 30px;
+    }
+    .intro .profile > div:nth-of-type(2){
+        background: #f7eba7;
+        left: 15px; top: 15px;
+    }
+    
+    .intro .profile .top > p{
+        padding: 2%;
+    }
+    .intro .profile .top > p img{
+        width: 100%;
+    }
+    .intro .profile .top .text{
+        padding: 5% 4%;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    .intro .profile .top .text p{
+        width: 100%;
+        margin-bottom: 8%;
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+        white-space: pre-line;
+    }
+    .intro .profile .top .text span{
+        width: 100%;
+        text-align: right;
+        font-size: 1.05rem;
+    }
+    .intro .profile .top .text span:first-of-type{
+        margin-bottom: 10px;
+    }
+    
+    .intro .intro_text{
+        margin-top: 50px;
+        width: 43%;
+        font-family: 'NanumSquare', sans-serif;
+        line-height: 1.5;
+    }
+    .intro .intro_text p{
+        font-size: 1.1rem;
+        white-space: pre-line;
+    }
+    .inrto .intro_text p span{
+        color: #784a4a;
+        font-size: 1.1rem;
+    }
+    .skill{
+        width: 100%;
+        position: relative;
+        padding-top: 5%;
+    }
+    
+    .skill .title{
+        position: absolute;
+        left: 15%; top: 5%;
+        width: 13%; height: 50px;
+        background: #333;
+        overflow: hidden;
+    }
+    .skill .title span{
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .skill .skill_list2{
+        display: none;
+    }
+    .skill .skill_list{
+        width: 150%;
+        height: 1300px;
+        padding: 1% 0;
+        transform: rotate(-6deg);
+    }
+    .skill .skill_list ul{
+        margin: 2% 0;
+        width: 110%;
+        position: relative;
+        transition:.2s linear;
+        height:230px;
+    }
+    
+    .skill .line1{left: -10%;}
+    .skill .line2{left: -10%;}
+    
+    .skill .skill_list ul li{
+        width: 16%;
+        height: 230px;
+        position:absolute;
+        left:0; top:0;
+    }
+    .skill .skill_list ul li >div{
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 90%;
+        background: #fff;
+        border: 3px solid #333;
+    }
+    .skill .skill_list ul li >div:nth-of-type(1){
+        left: 24px; top: 24px;
+    }
+    .skill .skill_list ul li >div:nth-of-type(2){
+        left: 12px; top: 12px;
+    }
+    .skill .skill_list ul li >div span{
+        font-size: 1.8rem;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        transform: rotate(-90deg) translateX(-170px) translateY(40px);
+        transform-origin: left;
+        padding: 5px 20px;
+    }
+    .skill .skill_list ul li div .skill_text{
+        width: 70%;
+        position: absolute;
+        left: 20%; top: 6%;
+    }
+    .skill .skill_list ul li >div p{
+        width: 100%;
+        font-size: 1.28rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        padding: 4% 0;
+        border-bottom: 2px solid #333;
+    }
+    .skill .skill_list ul li >div strong{
+        width: 100%;
+        padding: 2% 0;
+        font-size: 2.3rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .skill .skill_list ul li >div small{
+        font-size: 1.05rem;
+        font-family: 'NanumSquare', sans-serif;
+    }
+    
+    
+    /*스킬리스트 색상지정*/
+    .skill .skill_list ul .html >div:nth-of-type(1){
+        background: #ea9280;
+    }
+    .skill .skill_list ul .html >div:nth-of-type(2){
+        background: #fad8d1;
+    }
+    .skill .skill_list ul .html >div span{
+        background: #85200c;
+    }
+    .skill .skill_list ul .css >div:nth-of-type(1){
+        background: #9fd588;
+    }
+    .skill .skill_list ul .css >div:nth-of-type(2){
+        background: #d8ead2;
+    }
+    .skill .skill_list ul .css >div span{
+        background: #37761d;
+    }
+    .skill .skill_list ul .php >div:nth-of-type(1){
+        background: #fcda7a;
+    }
+    .skill .skill_list ul .php >div:nth-of-type(2){
+        background: #fff2cd;
+    }
+    .skill .skill_list ul .php >div span{
+        background: #e7b003;
+    }
+    .skill .skill_list ul .javascript >div:nth-of-type(1){
+        background: #fda649;
+    }
+    .skill .skill_list ul .javascript >div:nth-of-type(2){
+        background: #fbd6ae;
+    }
+    .skill .skill_list ul .javascript >div span{
+        background: #e1790b;
+    }
+    .skill .skill_list ul .jquery >div:nth-of-type(1){
+        background: #428eed;
+    }
+    .skill .skill_list ul .jquery >div:nth-of-type(2){
+        background: #b6d5fc;
+    }
+    .skill .skill_list ul .jquery >div span{
+        background: #3587ec;
+    }
+    .skill .skill_list ul .git >div:nth-of-type(1){
+        background: #c47afd;
+    }
+    .skill .skill_list ul .git >div:nth-of-type(2){
+        background: #e5c3ff;
+    }
+    .skill .skill_list ul .git >div span{
+        background: #7a23bd;
+    }
+    
+    
+    
+    .contact{
+        width: 60%;
+        height: 700px;
+        margin: 0 auto;
+    /*    border: 1px solid #f00;*/
+    }
+    .contact .title{
+        width: 17%; height: 50px;
+        background: #333;
+        overflow: hidden;
+    }
+    .contact .title span{
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+    .contact .card{
+        width: 45%;
+        position: relative;
+        left: 0; top: 15%;
+    }
+    .contact .card > div{
+        width: 100%; height: 280px;
+        position: absolute;
+        left: 15px; top: 15px;
+        border: 3px solid #333;
+        background: #fbd6ae;
+    }
+    .contact .card > div:nth-of-type(2){
+        background: #fff;
+        left: 0; top: 0;
+    }
+    .contact .card > div .card_text{
+        width: 85%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .contact .card > div .brand{
+        width: 100%;
+        vertical-align: middle;
+        float: left;
+        padding: 0;
+    }
+    .contact .card > div .brand .logo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 1.7rem;
+        font-style: italic;
+        line-height: 0.8;
+        color: #fff;
+         -webkit-text-stroke: 2px #333;
+        text-align: left;
+        width: 90%;
+    }
+    .contact .card > div .brand span:nth-of-type(2){
+        display: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.8rem;
+        margin: 50px 0 0 0px;
+    }
+    .contact .card > div .brand::after{
+        display: none;
+    }
+    .contact .card > div .information{
+        display: flex;
+        width: 90%;
+        margin-top: 105px;
+        float: right;
+    }
+    .contact .card > div .information .left{
+        width: 30%;
+    }
+    .contact .card > div .information .left p{
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 0.86rem;
+    }
+    .contact .card > div .information .right{
+        width: 50%;
+    }
+    .contact .card > div .information .right p{
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 0.86rem;
+    }
+    
+    .contact .contact_box{
+        position: relative;
+    }
+    .contact .contact_box > div{
+        width: 400px; height: 510px;
+        position: absolute;
+        right: 0; top: 0;
+        background: #fff;
+        border: 3px solid #333;
+        
+    }
+    .contact .contact_box > div:nth-of-type(1){
+        right: -30px; top: 30px;
+        background: #428eed;
+    }
+    .contact .contact_box > div:nth-of-type(2){
+        right: -15px; top: 15px;
+        background: #b6d5fc;
+    }
+    .contact .contact_box > div .circle{
+        width: 100%;
+        text-align: right;
+    }
+    .contact .contact_box > div .circle::after{
+        content: '';
+        width: 100%; height: 3px;
+        background: #333;
+        display: block;
+    }
+    .contact .contact_box > div .circle span{
+        width: 20px; height: 20px;
+        border: 2px solid #333;
+        border-radius: 20px;
+        margin: 10px 0;
+        margin-right: 8px;
+        background: #f7eba7;
+    }
+    
+    .contact .contact_box > div .circle span:nth-of-type(2){
+        background: #aedab4;
+    }
+    .contact .contact_box > div .circle span:nth-of-type(3){
+        background: #f4cccc;
+    }
+    
+    .contact .contact_box > div form{
+        padding: 0 30px;
+        position: relative;
+    }
+    .contact .contact_box > div form p{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .contact .contact_box > div form p label{
+        width: 150px;
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .contact .contact_box > div form p input,
+    .contact .contact_box > div form p textarea
+    {
+        box-shadow: none;
+        border-style: none;
+        border-bottom: 2px solid #333;
+        width: 100%; height: 40px;
+        margin-top: 10px;
+    }
+    .contact .contact_box > div form p textarea{
+        height:70px;
+    }
+    .contact .contact_box > div form p input:nth-of-type(2){
+        width: 100%;
+    }
+    .contact .contact_box > div form p:last-of-type{
+        height: 50px;
+    }
+    .contact .contact_box > div form p:last-of-type input{
+        border-style: none;
+        width: 30%;
+        background: #fff;
+        font-family: 'NanumSquare', sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: 2px solid #333;
+        padding: 5px 0;
+        position: absolute;
+        right: 0; bottom: 0;
+        cursor: pointer;
+        margin-left: 32px;
+    }
+    .contact .contact_box > div form p:last-of-type input:hover{
+        background: #333;
+        color: #fff;
+    }
+    .top_box{
+        width: 100%;
+        position: relative;
+    }
+    .top_box a{
+        position: fixed;
+        right: 5%;
+        bottom: 150px;
+    }
+    .top_box a img{}
+    .top_box a p{
+        white-space: pre-line;
+    /*    transform: translateX(-70%);*/
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.7rem;
+        color: #fff;
+        -webkit-text-stroke: 1px #333;
+    }
+    
+    .top_box a:hover p{
+        color: #e02456;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1023px){
     .mobile{
         display: none;
         width: 100%;
@@ -1019,6 +1868,7 @@
         font-weight: 400;
         font-style: italic;
         text-align: center;
+        margin-top: 50px;
     }
     .contact .card > div .brand::after{
         content: '';
@@ -1154,7 +2004,7 @@
     }
     .top_box a{
         position: fixed;
-        right: -5%;
+        right: 5%;
         bottom: 150px;
     }
     .top_box a p{

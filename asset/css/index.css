@@ -344,7 +344,7 @@ ul .work_list .work_name{
 ul .work_list small{
     width: 150%;
     position: absolute;
-    left: 4%; top: 125%;
+    left: 4%; top: 65vh;
     text-align: center;
     font-family: 'NanumSquare', sans-serif;
     font-size: 1.1rem;
@@ -377,7 +377,319 @@ ul .work_list small{
     75%{transform: rotate(-15deg); }
     100%{transform: rotate(0deg);}
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 1441px) and (max-width: 1700px) {
+    nav{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 10%; top: 5%;
+        margin-top: 20px;
+    }
+    
+    .slide{
+        width: 100%;
+    /*    height: 570px;*/
+        height: 50vh;
+        position: relative;
+        left: 0; top: 0;
+        transform: rotate(-8deg);
+    }
+    .slide ul{
+        /* width: 100%; height:100%; */
+        position: absolute;
+        left: -185%; top: 0%;    
+    }
+    
+    ul li{
+        width:50%;
+        height: 100%;
+        position:absolute;
+    /*    border: 1px solid #f00*/
+    }
+    
+    ul .arrow{
+        width: 450px;
+        height: 100%;
+        margin: 0;
+        
+    }
+    ul .arrow h3{
+        position: absolute;
+        left: 0; top: 53%;
+        z-index: 5;
+        font-size: 4.5rem;
+        color: #e02456;
+        -webkit-text-stroke: 1px #333;
+        font-family: 'Montserrat', sans-serif;
+    }
+    ul .arrow p{
+        position: relative;
+        left: 65%; top: 50%;
+        animation: sArrow 2s linear infinite;
+    }
+    
+    @keyframes sArrow{
+        0%{left: 65%;}
+        50%{left: 70%;}
+        100%{left: 65%;}
+    }
+    ul .arrow p img{
+        position: absolute;
+        width: 230px;
+    }
+    ul .arrow p img:first-of-type{
+        left: 1.5%; top: 10px;
+    }
+    
+    ul .work_list{
+        width: 22%;
+        height: 100%;
+        cursor: pointer;
+    }
+    ul .work_list .num{
+        margin-left: 23%;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        -webkit-text-stroke: 2px #333;
+    }
+    ul .work_list .photo_box{
+        position: relative;
+        width: 150%;
+        height: 100%;
+    }
+    ul .work_list .photo_box p{
+        border: 3px solid #333;
+        width: 66%;
+        height: 100%;
+        position: absolute;
+        left: 15%;
+        padding:10px;
+    /*    overflow: hidden;*/
+    }
+    ul .work_list .photo_box p:first-of-type{
+        left: 21%; top: 30px;
+    }
+    ul .work_list .photo_box p:nth-of-type(2){
+        left: 18%; top: 15px;
+    }
+    ul .work_list .photo_box .first_p{
+        background: #fff;
+        text-align: center;
+    }
+    ul .work_list .photo_box .first_p img{
+        width:100%;
+        height: 100%;
+    }
+    ul .work_list .work_name{
+        width: 150%;
+        position: absolute;
+        top: 59%;
+        transform: translateY(-50%);
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 2px black;
+    }
+    ul .work_list small{
+        width: 150%;
+        position: absolute;
+        left: 4%; top: 130%;
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    .work1 .photo_box p:first-of-type{
+        background: #f7e47e;
+    }
+    .work1 .photo_box p:nth-of-type(2){
+        background: #f8efbd;
+    }
+    .work2 .photo_box p:first-of-type{
+        background: #8dc6fa;
+    }
+    .work2 .photo_box p:nth-of-type(2){
+        background: #c9e1f7;
+    }
+    .work3 .photo_box p:first-of-type{
+        background: #9fd588;
+    }
+    .work3 .photo_box p:nth-of-type(2){
+        background: #d8ead2;
+    }
+    
+    @keyframes frame{
+        0%{transform: rotate(0deg);}
+        25%{transform: rotate(15deg);}
+        50%{transform: rotate(0deg);}
+        75%{transform: rotate(-15deg); }
+        100%{transform: rotate(0deg);}
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    nav{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 10%; top: 5%;
+        margin-top: 20px;
+    }
+    
+    .slide{
+        width: 100%;
+    /*    height: 570px;*/
+        height: 50vh;
+        position: relative;
+        left: 0; top: 0;
+        transform: rotate(-8deg);
+    }
+    .slide ul{
+        /* width: 100%; height:100%; */
+        position: absolute;
+        left: -185%; top: 0%;    
+    }
+    
+    ul li{
+        width:50%;
+        height: 100%;
+        position:absolute;
+    /*    border: 1px solid #f00*/
+    }
+    
+    ul .arrow{
+        width: 450px;
+        height: 100%;
+        margin: 0;
+        
+    }
+    ul .arrow h3{
+        position: absolute;
+        left: 0; top: 53%;
+        z-index: 5;
+        font-size: 4.5rem;
+        color: #e02456;
+        -webkit-text-stroke: 1px #333;
+        font-family: 'Montserrat', sans-serif;
+    }
+    ul .arrow p{
+        position: relative;
+        left: 65%; top: 50%;
+        animation: sArrow 2s linear infinite;
+    }
+    
+    @keyframes sArrow{
+        0%{left: 65%;}
+        50%{left: 70%;}
+        100%{left: 65%;}
+    }
+    ul .arrow p img{
+        position: absolute;
+        width: 230px;
+    }
+    ul .arrow p img:first-of-type{
+        left: 1.5%; top: 10px;
+    }
+    
+    ul .work_list{
+        width: 22%;
+        height: 100%;
+        cursor: pointer;
+    }
+    ul .work_list .num{
+        margin-left: 23%;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        -webkit-text-stroke: 2px #333;
+    }
+    ul .work_list .photo_box{
+        position: relative;
+        width: 150%;
+        height: 100%;
+    }
+    ul .work_list .photo_box p{
+        border: 3px solid #333;
+        width: 66%;
+        height: 100%;
+        position: absolute;
+        left: 15%;
+        padding:10px;
+    /*    overflow: hidden;*/
+    }
+    ul .work_list .photo_box p:first-of-type{
+        left: 21%; top: 30px;
+    }
+    ul .work_list .photo_box p:nth-of-type(2){
+        left: 18%; top: 15px;
+    }
+    ul .work_list .photo_box .first_p{
+        background: #fff;
+        text-align: center;
+    }
+    ul .work_list .photo_box .first_p img{
+        width:100%;
+        height: 100%;
+    }
+    ul .work_list .work_name{
+        width: 150%;
+        position: absolute;
+        top: 59%;
+        transform: translateY(-50%);
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 2px black;
+    }
+    ul .work_list small{
+        width: 150%;
+        position: absolute;
+        left: 4%; top: 128%;
+        text-align: center;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    .work1 .photo_box p:first-of-type{
+        background: #f7e47e;
+    }
+    .work1 .photo_box p:nth-of-type(2){
+        background: #f8efbd;
+    }
+    .work2 .photo_box p:first-of-type{
+        background: #8dc6fa;
+    }
+    .work2 .photo_box p:nth-of-type(2){
+        background: #c9e1f7;
+    }
+    .work3 .photo_box p:first-of-type{
+        background: #9fd588;
+    }
+    .work3 .photo_box p:nth-of-type(2){
+        background: #d8ead2;
+    }
+    
+    @keyframes frame{
+        0%{transform: rotate(0deg);}
+        25%{transform: rotate(15deg);}
+        50%{transform: rotate(0deg);}
+        75%{transform: rotate(-15deg); }
+        100%{transform: rotate(0deg);}
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
     
     .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
 
@@ -608,7 +920,7 @@ ul .work_list small{
     }
     .slide{
         border: #e02456;
-        width: 170%;
+        width: 110%;
         height: 500px;
         position: relative;
         left: -38%; top: 10%;
@@ -621,7 +933,7 @@ ul .work_list small{
     }
 
     ul li{
-        width:25% !important;
+        width: 45% !important;
         height: 100%;
 /*        border: 1px solid #f00;*/
 /*        margin: 0 50%;*/
