@@ -173,7 +173,7 @@
 .photo_frame .frame p{
     width: 100%;
     position: absolute;
-    left: 0.5; top: 0;
+    left: 0.5%; top: 0;
 }
 .photo_frame .frame p img{
     width: 100%;
@@ -860,7 +860,7 @@ ul .work_list small{
     .photo_frame .frame p{
         width: 100%;
         position: absolute;
-        left: 0.5; top: 0;
+        left: 0.5%; top: 0;
     }
     .photo_frame .frame p img{
         width: 100%;
